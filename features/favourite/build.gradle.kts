@@ -1,10 +1,11 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+    id("io.gitlab.arturbosch.detekt")
 }
 
 android {
-    namespace = "com.app.home"
+    namespace = "com.app.favourite"
     compileSdk = 32
 
     defaultConfig {
@@ -12,7 +13,7 @@ android {
         targetSdk = 32
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles("consumer-rules.pro")
+        consumerProguardFiles ("consumer-rules.pro")
     }
 
     buildTypes {

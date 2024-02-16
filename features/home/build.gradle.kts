@@ -1,10 +1,11 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+    id("io.gitlab.arturbosch.detekt")
 }
 
 android {
-    namespace = "com.app.search"
+    namespace = "com.app.home"
     compileSdk = 32
 
     defaultConfig {
