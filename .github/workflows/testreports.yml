@@ -2,8 +2,7 @@ name: upload test report
 
 on:
   pull_request:
-    branches:
-      - 'main'
+    branches: [ master ]
 
 jobs:
   Unit-test:
