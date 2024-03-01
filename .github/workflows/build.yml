@@ -19,15 +19,12 @@ jobs:
 
       - name: Set Up JDK
         uses: actions/setup-java@v1
-        with: { java-version: 1.8 }
-
-      - name: Change wrapper permissions
-        run: chmod +x ./gradlew
+        with: { java-version: 11 }
 
       # Run Tests Build
       - name: Run gradle tests
-        run: ./gradlew test
+        run: gradle test
 
       # Run Build Project
       - name: Build gradle project
-        run: ./gradlew build
+        run: gradle build
