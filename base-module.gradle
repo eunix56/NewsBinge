@@ -2,7 +2,6 @@ android {
     compileSdk = ProjectConfig.compileSdk
 
     defaultConfig {
-        applicationId = ProjectConfig.appId
         minSdk = ProjectConfig.minSdk
         targetSdk = ProjectConfig.targetSdk
         versionCode = ProjectConfig.versionCode

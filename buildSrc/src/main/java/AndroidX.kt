@@ -6,5 +6,5 @@ object AndroidX {
     const val appCompat = "androidx.appcompat:appcompat:$appCompatVersion"
 
     private const val lifecycleVersion = "2.3.1"
-    const val lifecycleRuntime = "androidx.lifecycle:lifecycle-runtime-ktx$lifecycleVersion"
+    const val lifecycleRuntime = "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion"
 }
