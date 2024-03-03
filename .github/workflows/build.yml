@@ -19,11 +19,17 @@ jobs:
 
       - name: Set Up JDK
         uses: actions/setup-java@v1
-        with: { java-version: 11 }
+        with: { java-version: 17 }
 
       # Run Tests Build
       - name: Run gradle tests
         run: gradle test
+
+      - name: Upload html test report
+        uses: actions/upload-artifact@v2
+        with:
+          name: index.html
+          path: app/build/reports/tests/testDebugUnitTest/index.html
 
       # Run Build Project
       - name: Build gradle project
