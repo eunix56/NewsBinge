@@ -1,0 +1,61 @@
+android {
+    compileSdk = ProjectConfig.compileSdk
+
+    defaultConfig {
+        applicationId = ProjectConfig.appId
+        minSdk = ProjectConfig.minSdk
+        targetSdk = ProjectConfig.targetSdk
+        versionCode = ProjectConfig.versionCode
+        versionName = ProjectConfig.versionName
+
+        testInstrumentationRunner = Testing.testInstrumentationRunner
+        vectorDrawables {
+            useSupportLibrary = true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled = false
+            proguardFiles(
+                    getDefaultProguardFile("proguard-android-optimize.txt"),
+                    "proguard-rules.pro"
+            )
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+    buildFeatures {
+        compose true
+        viewBinding true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = Kotlin.compilerExtensionVersion
+    }
+    packagingOptions {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
+    }
+}
+
+dependencies {
+    implementation AndroidX.coreKtx
+    implementation AndroidX.lifecycleRuntime
+    implementation Compose.activityCompose
+    implementation Compose.ui
+    implementation Compose.uiToolingPreview
+    implementation Compose.material
+
+    testImplementation Testing.junit4
+    testImplementation Testing.junitAndroidExt
+    androidTestImplementation Testing.espresso
+    androidTestImplementation Testing.composeUiTest
+    debugImplementation Testing.composeUiTooling
+    debugImplementation Testing.composeTestManifest
+}
