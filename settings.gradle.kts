@@ -13,9 +13,9 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "NewsBinge"
-include ':app'
-include ':features:home'
-include ':features:search'
-include ':features:favourite'
-include ':features:settings'
-include ':common'
+include(":app")
+include(":features:home")
+include(":features:search")
+include(":features:favourite")
+include(":features:settings")
+include(":common")
