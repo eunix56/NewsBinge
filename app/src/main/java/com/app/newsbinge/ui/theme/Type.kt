@@ -1,17 +1,74 @@
 package com.app.newsbinge.ui.theme
 
-import androidx.compose.material.Typography
+import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontSynthesis
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
 // Set of Material typography styles to start with
 val Typography = Typography(
-    body1 = TextStyle(
-        fontFamily = FontFamily.Default,
+    displayLarge = TextStyle(
+        fontSize = 24.sp,
+        color = Black400,
+        fontFamily = avenirFontsFamily,
+        fontWeight = FontWeight.Black,
+        fontSynthesis = FontSynthesis.Weight
+    ),
+
+    titleLarge = TextStyle(
+        fontSize = 30.sp,
+        color = Black400,
+        fontFamily = avenirFontsFamily,
+        fontWeight = FontWeight.Black,
+        fontSynthesis = FontSynthesis.Weight
+    ),
+
+    titleMedium = TextStyle(
+        fontSize = 16.sp,
+        color = Black400,
+        fontFamily = avenirFontsFamily,
+        fontWeight = FontWeight.SemiBold,
+        fontSynthesis = FontSynthesis.Weight
+    ),
+
+    titleSmall = TextStyle(
+        fontSize = 14.sp,
+        fontFamily = avenirFontsFamily,
+        fontWeight = FontWeight.Medium,
+        fontSynthesis = FontSynthesis.Weight
+    ),
+
+    labelMedium = TextStyle(
+        fontSize = 12.sp,
+        color = Grey200,
+        fontFamily = avenirFontsFamily,
+        fontWeight = FontWeight.Medium,
+        fontSynthesis = FontSynthesis.Weight
+    ),
+
+    labelSmall = TextStyle(
+        fontSize = 11.sp,
+        color = Grey200,
+        fontFamily = avenirFontsFamily,
         fontWeight = FontWeight.Normal,
-        fontSize = 16.sp
+        fontSynthesis = FontSynthesis.Weight
+    ),
+
+    bodyMedium = TextStyle(
+        fontSize = 14.sp,
+        color = Grey200,
+        fontFamily = avenirFontsFamily,
+        fontWeight = FontWeight.Medium,
+        fontSynthesis = FontSynthesis.Weight
+    ),
+
+    headlineMedium = TextStyle(
+        fontSize = 14.sp,
+        color = Black400,
+        fontFamily = avenirFontsFamily,
+        fontWeight = FontWeight.SemiBold,
+        fontSynthesis = FontSynthesis.Weight
     )
     /* Other default text styles to override
     button = TextStyle(
