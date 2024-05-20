@@ -5,9 +5,6 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontSynthesis
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-import com.app.search.ui.theme.Black400
-import com.app.search.ui.theme.Grey200
-import com.app.search.ui.theme.avenirFontsFamily
 
 // Set of Material typography styles to start with
 val Typography = Typography(

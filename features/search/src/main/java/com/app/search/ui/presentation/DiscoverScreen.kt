@@ -57,7 +57,8 @@ import coil.compose.AsyncImage
 import com.app.search.R
 import com.app.search.model.NewsItemData
 import com.app.search.ui.shimmerLoadingAnimation
-import com.app.search.ui.theme.NewsBingeTheme
+import com.app.common.theme.NewsBingeTheme
+import com.app.search.model.SourceData
 
 /**
  * Created by {EUNICE BAKARE T.} on {2/21/24}
@@ -184,7 +185,6 @@ fun DiscoverSearchBar(
 fun SortDialog(openDialog: MutableState<Boolean>,
                onSort: (String) -> Unit,
                selectedValue: String) {
-    val context = LocalContext.current
     val sortList = listOf<String>(
         stringResource(id = R.string.relevancy),
         stringResource(id = R.string.popularity),
@@ -518,25 +518,21 @@ fun NewsItemLoader(modifier: Modifier) {
 @Preview(showBackground = true)
 fun DefaultPreview() {
     NewsBingeTheme {
-//        DiscoverScreenContent("All Sports Law Politics Education".split(" "),
-//            true,
-//            listOf(
-//                NewsItemData(
-//                    "What training do Volleyball Players Need?",
-//                    "",
-//                    "",
-//                    "Sport",
-//                    "Eunice B",
-//                    null,
-//                    "12-03-2024",
-//                    SourceData("",""),
-//                    "",
-//                    ""
-//                )
-//            ), true, {}, {}, {})
-        val openDialog = remember {
-            mutableStateOf(false)
-        }
-        SortDialog(openDialog = openDialog, onSort = {}, selectedValue = "Published At")
+        DiscoverScreenContent("All Sports Law Politics Education".split(" "),
+            true,
+            listOf(
+                NewsItemData(
+                    "What training do Volleyball Players Need?",
+                    "",
+                    "",
+                    "Sport",
+                    "Eunice B",
+                    null,
+                    "12-03-2024",
+                    SourceData("",""),
+                    "",
+                    ""
+                )
+            ), true, {}, {}, {})
     }
 }
