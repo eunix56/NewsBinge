@@ -2,7 +2,6 @@ android {
     compileSdk = ProjectConfig.compileSdk
 
     defaultConfig {
-        applicationId = ProjectConfig.appId
         minSdk = ProjectConfig.minSdk
         targetSdk = ProjectConfig.targetSdk
         versionCode = ProjectConfig.versionCode
@@ -50,9 +49,17 @@ dependencies {
     implementation Compose.activityCompose
     implementation Compose.ui
     implementation Compose.uiToolingPreview
-    implementation Compose.material
+    implementation Compose.material3
+    implementation Compose.viewModelCompose
+    implementation Compose.coil
+
+    implementation Retrofit.retrofit
+    implementation Retrofit.okHttp
+    implementation Retrofit.moshiKotlin
+    implementation Retrofit.moshiConverter
 
     testImplementation Testing.junit4
+    testImplementation Testing.mockk
     testImplementation Testing.junitAndroidExt
     androidTestImplementation Testing.espresso
     androidTestImplementation Testing.composeUiTest

@@ -9,3 +9,7 @@ apply( from = "$rootDir/base-module.gradle")
 android {
     namespace = "com.app.search"
 }
+
+dependencies {
+    implementation(project(":common"))
+}

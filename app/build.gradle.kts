@@ -8,4 +8,8 @@ apply( from = "$rootDir/base-module.gradle")
 
 android {
     namespace = ProjectConfig.appId
+
+    defaultConfig {
+        applicationId = ProjectConfig.appId
+    }
 }

@@ -14,5 +14,5 @@ dependencies {
 
 val compileKotlin: org.jetbrains.kotlin.gradle.tasks.KotlinCompile by tasks
 compileKotlin.kotlinOptions {
-    jvmTarget = "18"
+    jvmTarget = "17"
 }
