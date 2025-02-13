@@ -1,6 +1,4 @@
-package com.app.search.model
-
-import com.app.search.remote.model.Source
+package com.app.common.model
 
 /**
  * Created by {EUNICE BAKARE T.} on {3/9/24}

@@ -1,8 +1,8 @@
 package com.app.search
 
 import com.app.search.data.SearchNewsContract
-import com.app.search.model.NewsItemData
-import com.app.search.model.SourceData
+import com.app.common.model.NewsItemData
+import com.app.common.model.SourceData
 import com.app.search.remote.NewsContractImpl
 import com.app.search.ui.presentation.DiscoverScreenViewModel
 import io.mockk.mockk

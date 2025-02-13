@@ -55,10 +55,10 @@ import androidx.compose.ui.window.Dialog
 import androidx.lifecycle.viewmodel.compose.viewModel
 import coil.compose.AsyncImage
 import com.app.search.R
-import com.app.search.model.NewsItemData
+import com.app.common.model.NewsItemData
 import com.app.search.ui.shimmerLoadingAnimation
 import com.app.common.theme.NewsBingeTheme
-import com.app.search.model.SourceData
+import com.app.common.model.SourceData
 
 /**
  * Created by {EUNICE BAKARE T.} on {2/21/24}
@@ -81,7 +81,7 @@ fun DiscoverScreen(viewModel: DiscoverScreenViewModel = viewModel()) {
 }
 
 @Composable
-fun DiscoverScreenContent(chips: List<String>, 
+fun DiscoverScreenContent(chips: List<String>,
                           chipIsLoading: Boolean,
                           newsItemData: List<NewsItemData>,
                           newsIsLoading: Boolean,

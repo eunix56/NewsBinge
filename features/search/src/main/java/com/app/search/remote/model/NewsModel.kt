@@ -1,7 +1,7 @@
 package com.app.search.remote.model
 
-import com.app.search.model.NewsItemData
-import com.app.search.model.SourceData
+import com.app.common.model.NewsItemData
+import com.app.common.model.SourceData
 import com.app.search.remote.model.Source.Companion.toSourceData
 
 /**

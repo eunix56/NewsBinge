@@ -3,7 +3,7 @@ package com.app.search.ui.presentation
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.app.search.data.SearchNewsContract
-import com.app.search.model.NewsItemData
+import com.app.common.model.NewsItemData
 import com.app.search.remote.model.NewsData.Companion.toNewsItemData
 import com.app.search.remote.model.NewsSourceModel
 import kotlinx.coroutines.CoroutineExceptionHandler
