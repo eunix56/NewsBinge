@@ -10,7 +10,7 @@ object Compose {
     private const val coilVersion = "2.6.0"
     const val coil = "io.coil-kt:coil-compose:$coilVersion"
 
-    private const val material3Version = "1.1.1"
+    private const val material3Version = "1.3.1"
     const val material3 = "androidx.compose.material3:material3:$material3Version"
 
     private const val navigationVersion = "2.5.3"
